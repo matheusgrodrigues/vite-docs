@@ -9,5 +9,13 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+    <script type="module">
+      import { getAsset } from "./dist/my-lib";
+
+      const asset = getAsset().then((resolve) => resolve);
+
+      console.log(asset);
+      asset;
+    </script>
   </body>
 </html>
